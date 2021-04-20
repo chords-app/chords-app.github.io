@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<body dir="rtl">
+    <center>
+        <h2>הוספת 2 ארועים זהים לאותה תגית </h2>
+
+        <input type="button" id="btn" value="לחץ">
+    </center>
+
+    <script>
+var x = document.getElementById("btn");
+x.addEventListener("click",FirstFunction);
+x.addEventListener("click", SecondFunction);
+
+function FirstFunction() {
+  alert ("פונקציה ראשונה");
+}
+
+function SecondFunction() {
+  alert ("וגם הפונקציה השנייה !");
+}
+    </script>
+
+</body>
+</html>

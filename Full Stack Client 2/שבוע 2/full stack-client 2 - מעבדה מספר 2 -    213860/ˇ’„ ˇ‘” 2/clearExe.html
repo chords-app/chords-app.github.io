@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        //שעון
+        var myVar;
+
+        function start() {
+            myVar = setInterval("myTimer()", 1000);
+        }
+
+        function myTimer() {
+            var d = new Date();
+            var t = d.toLocaleTimeString();
+            document.getElementById("timesPlace").innerHTML = t;
+        }
+    </script>
+
+    <br />
+
+    <p id="timesPlace"></p>
+    <br /><br /><br />
+
+    <center>
+        <input type="button" name="start" value="start" onclick="start()" />
+        <br /> <br />
+        <input type="button" name="stop" value="stop" onclick="clearInterval(myVar)" />
+    </center>
+
+
+</body>
+</html>

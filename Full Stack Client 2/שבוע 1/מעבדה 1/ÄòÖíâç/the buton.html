@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    
+<script language="javascript" type="text/javascript">
+var x = document.getElementById("btn");
+x.addEventListener("click",FirstFunction);
+x.addEventListener("click", SecondFunction);
+function FirstFunction() {
+        alert ("the bubbling doesn't reach here");
+      }
+ function SecondFunction() {
+        alert ("i was not stopped");
+      }    
+</script>
+</head>
+
+<body dir="rtl" style="background-color:aquamarine" onclick="alert('the bubbling doesnt reach here'), ondblclick=SecondFunction()">
+
+    <input type="button" style="width: 100px; height: 30px; font-size: 25px;" id="btn" value="לחץ">
+
+   
+
+
+</body>
+
+</html>

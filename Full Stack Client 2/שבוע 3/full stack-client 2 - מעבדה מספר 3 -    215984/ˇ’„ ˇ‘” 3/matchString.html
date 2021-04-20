@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body bgcolor ="greenyellow" dir="rtl">
+    <br /><br />
+    <center>
+        <font color="blue">
+            <h2>לחץ על הכפתור לביצוע חיפוש גלובלי של האותיות "שרה" במחרוזת והצגת ההתאמות שנמצאו  </h2>
+
+            <button onclick="Func()">לחץ לחיפוש</button>
+
+            <p id="demo"></p>
+        </font>
+        <script>
+            function Func() {
+                var str = "שרה שרה שיר שמח, שיר שמח שרה שרה ";
+                var res = str.match(/שרה/g); // g בלי
+                document.getElementById("demo").innerHTML = res;  //res[0]
+            }
+        </script>
+    </center>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Untitled Page</title>
+    <script language="javascript" type="text/javascript">
+    function FirstFunction(y) 
+    {
+       //var x = document.getElementById(y);
+       //x.value = x.value.toUpperCase();
+       //                 or
+       document.getElementById(y).value = document.getElementById(y).value.toUpperCase();
+    }
+    
+    function SecondFunction(x) 
+    {
+       document.getElementById(x).style.background = "aqua";
+    }
+    </script>
+</head>
+<body>
+
+<br /><br />
+Enter your name: <input type="text" name="fname" id="fname" onblur="FirstFunction(this.id)"> <br /><br />
+Enter your cell phone: <input type="text" name="cellPhone" id="cellPhone" onfocus="SecondFunction(this.id)">
+
+<p>
+When you leave the input field name, a function is triggered which transforms the input text to upper case.
+When the input field: cell phone get focus, The function changes the background-color of the input field.
+</p>
+
+
+</body>
+</html>

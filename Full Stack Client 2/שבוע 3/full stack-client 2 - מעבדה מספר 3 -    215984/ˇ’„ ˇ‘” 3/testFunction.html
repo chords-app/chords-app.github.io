@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body bgcolor="aquamarine" dir="rtl">
+    <center>
+        <h2> במשפט הבא נחפש את המילה life  </h2>
+
+
+        <p id="p1">The best things in life are free </p>
+
+        <p id="demo"></p>
+
+        <script>
+            str = document.getElementById("p1").innerHTML;
+            document.getElementById("demo").innerHTML = "Is the word life is in this sentence? " + /life/i.test(str); //line   //   זימון הפונקציה בלבד /life/i.test(str)
+
+        </script>
+    </center>
+</body>
+</html>

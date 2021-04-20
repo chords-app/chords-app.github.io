@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Untitled Page</title>
+    <script language="javascript" type="text/javascript">
+       function bigImg(x) {
+//          x.style.height = "64px";
+          document.getElementById("img1").style.height = "64px";
+          x.style.width = "64px";
+       }
+
+       function normalImg(x) {
+          x.style.height = "32px";
+          x.style.width = "32px";
+       }
+    </script>
+</head>
+<body dir="rtl">
+
+<img id="img1" onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="sun.jpg" title="Sun" width="32" height="32">
+
+<p> במעכבר עכבר על התמונה, היא גדלה</p>
+<p> כאשר העכבר "עוזב" את התמונה היא קטנה</p>
+
+
+</body>
+</html>

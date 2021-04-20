@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+
+<body bgcolor="beige" dir="rtl">
+
+    <!--  n{X}   -->
+    <center>
+        <font color="green">
+            <h2>לחץ על הכפתור לחיפוש גלובלי אחר תתי מחרוזות המכילים רצף של 4 ספרות</h2>
+
+            <button onclick="Func()">4 ספרות ברצף</button>
+
+            <p id="demo"></p>
+        </font>
+    </center>
+
+    <script>
+        function Func() {
+            var str = "100, 1000 or 10000?";
+            var result = str.match(/\d{4}/g);
+            document.getElementById("demo").innerHTML = result;
+        }
+    </script>
+
+
+
+    <!--  n{X,Y}    -->
+    <center>
+        <font color="blue">
+            <h2>לחץ על הכפתור לחיפוש גלובלי אחר תתי מחרוזות המכילים רצף של 3 עד 4 ספרות</h2>
+
+            <button onclick="Func2()">    3 עד 4 ספרות ברצף</button>
+
+            <p id="demo2"></p>
+        </font>
+    </center>
+
+    <script>
+        function Func2() {
+            var str = "100, 1000 or 10000?";
+            var result = str.match(/\d{3,4}/g);
+            document.getElementById("demo2").innerHTML = result;
+        }
+    </script>
+
+
+    <!--  n{X,}    -->
+    <center>
+        <font color="red">
+            <h2>לחץ על הכפתור לחיפוש גלובלי אחר תתי מחרוזות המכילים רצף של 1 ספרות לפחות</h2>
+
+            <button onclick="Func3()"> 1 ספרות לפחות ברצף </button>
+
+            <p id="demo3"></p>
+        </font>
+    </center>
+
+    <script>
+        function Func3() {
+            var str = "100, 1000 or 10000?";
+            var result = str.match(/\d{1,}/g);
+            document.getElementById("demo3").innerHTML = result;
+        }
+    </script>
+
+
+
+</body>
+</html>

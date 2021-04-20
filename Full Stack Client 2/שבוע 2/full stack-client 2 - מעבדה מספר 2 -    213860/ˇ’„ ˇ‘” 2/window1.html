@@ -1,0 +1,33 @@
+﻿  <!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <center>
+        <h1>כל לחצן יפתח חלון אחר - בואו ננסה </h1>
+
+        <button onclick="Function1()">בדף חדש HTML פתח קובץ </button>  <br /> <br />
+        <button onclick="Function2()"> פתח אתר אינטרנט באותו דף  </button> <br /> <br />
+        <button onclick="Function3()"> פתח חלון קטן   </button>
+        <br /> <br />
+    </center>
+    <script>
+        function Function1() {
+            window.open("setinterval2.html");
+        }
+
+        function Function2() {
+            window.open("https://www.mako.co.il/tv-erez-nehederet", "_self"); //("https://he.wikipedia.org/wiki/%D7%99%D7%90%D7%A0%D7%95%D7%A9_%D7%A7%D7%95%D7%A8%D7%A6%27%D7%90%D7%A7", "_self");
+        }
+
+        function Function3() {
+            var x=100
+            var myWindow = window.open("", "", "width=200,height=100");
+            myWindow.document.write("<p>x="  + x + "</p>");
+        }
+    </script>
+</body>
+</html>

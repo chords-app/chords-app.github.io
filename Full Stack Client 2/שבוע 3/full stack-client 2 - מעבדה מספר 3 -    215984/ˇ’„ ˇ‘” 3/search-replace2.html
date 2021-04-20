@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body bgcolor="gold" dir="rtl">
+    <center>
+        <h2>חפש תת מחרוזת והצג את מיקומה במחרוזת בה מתבצע החיפוש</h2>
+        <h2>אין משמעות לאותיות גדולות / קטנות</h2>
+        <p id="demo"></p> <br />
+
+        <script>
+            var str = "Hello ALL, Lets Find You";
+            var n = str.search(/YOU/i);
+            document.getElementById("demo").innerHTML = n;
+        </script>
+
+
+
+
+        <h2>  בלחיצה על הכפתור "החלף" בצע החלפה של מילה במשפט</h2>
+        <h2>אין משמעות לאותיות גדולות / קטנות</h2>
+
+        <button onclick="Func()">החלף</button> <br />
+        <p id="demo2"></p>
+
+        <script>
+
+            function Func() {
+                var txt = str.replace(/YOU/i, "Me");
+                document.getElementById("demo2").innerHTML = txt;
+            }
+        </script>
+    </center>
+</body>
+</html>

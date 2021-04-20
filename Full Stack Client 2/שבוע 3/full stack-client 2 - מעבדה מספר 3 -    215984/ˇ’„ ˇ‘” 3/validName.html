@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        var rexpr = /^[a-zA-Z]+[a-zA-Z]+$/; // /^[a-zA-Z]{2,}$/;  // /^[a-zA-Z]+ [a-zA-Z]+$/
+        var str ="TAL";  //a  //ab#   //%abc   // ab  //AB3
+        if (rexpr.test(str) == true)
+            document.write("<center><h2>" + str + "</h2></center>");
+        else
+            document.write("<center><h2> the string " + str + " can not be a valid name </h2></center>");
+    </script>
+</body>
+</html>

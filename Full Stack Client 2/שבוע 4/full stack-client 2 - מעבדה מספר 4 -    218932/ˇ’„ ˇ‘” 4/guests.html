@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        function cabs(...input) {
+            var sum = 0;
+            for (i of input) {
+                if (i % 7 != 0)
+                    sum += Math.ceil(i/7);
+                else
+                    sum += i/7;     
+            }
+            return sum;
+        }
+
+        document.write("<font size=5 >cabs(20)=" + cabs(20) + "<br><br>");
+        document.write("<font size=5 >cabs(14,20)=" + cabs(14, 20) + "<br><br>");
+        document.write("<font size=5 >cabs()=" + cabs() + "<br><br>");
+    </script>
+</body>
+</html>

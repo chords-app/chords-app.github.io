@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<!--  example1  -->
+<!--שימוש בפונקציה רגילה שאיננה 'פונקציית חץ' -->
+<body dir="rtl" style="background-color:aquamarine">
+    <h2> דוגמה זו מציגה שימוש בפונקציה  ללא שימוש 'בפונקציית חץ'</h2>
+
+    <p id="demo"></p><br />
+
+    <script>
+        var func;
+
+        func = function () {
+            return "אין קיצורי דרך למקומות שאליהם שווה להגיע (ברוולי סילס)";
+        }
+
+        document.getElementById("demo").innerHTML = func();
+    </script>
+
+
+
+
+    <!--  example2  -->
+    <!--שימוש 'בפונקציית חץ' -->
+    <font color="blue">
+        <h2>דוגמה זו מציגה שימוש 'בפונקציית חץ'</h2>
+
+        <p id="demo2"></p><br />
+    </font>
+
+    <script>
+        var func2;
+
+        func2 = () => {
+            return "אין קיצורי דרך למקומות שאליהם שווה להגיע (ברוולי סילס)!";
+        }
+
+        document.getElementById("demo2").innerHTML = func2();
+    </script>
+
+
+
+
+    <!--  example3  -->
+    <!--  שימוש 'בפונקציית חץ' ללא סוגריים מסולסלים וללא הוראת return -->
+    <font color="magenta">
+        <h2>דוגמה זו מציגה   שימוש 'בפונקציית חץ' ללא סוגריים מסולסלים וללא הוראת return </h2>
+
+        <p id="demo3"></p><br />
+    </font>
+
+    <script>
+        var func3;
+
+        func3 = () => "הצלחה היא סך כל המאמצים הקטנים שנעשים יום אחר יום (רוברט קולייר)";
+
+        document.getElementById("demo3").innerHTML = func3();
+    </script>
+
+
+
+
+    <!--  example4  -->
+    <!-- שימוש בפונציית חץ מקוצרת עם פרמט/פרמטרים  -->
+    <font color="olive">
+        <h2>דוגמה זו מציגה שימוש 'בפונקציית חץ' מקוצרת עם פרמטר/פרמטרים   </h2>
+
+        <p id="demo4"></p><br />
+    </font>
+
+    <script>
+        var func4;
+
+        func4 = (str,str2) => " מוטב שאכשל " + str + str2;
+
+        document.getElementById("demo4").innerHTML = func4(" באהבת חינם ", " ולא בשנאת חינם (רבי נחמן מברסלב)");
+    </script>
+
+
+
+
+    <!--  example5  -->
+    <!-- שימוש בפונציית חץ מקוצרת עם פרמט בודד מאפשרת לוותר על הסוגריים המסמנים את הפונקציה  -->
+    <font color="red">
+        <h2>דוגמה זו מציגה שימוש 'בפונקציית חץ' מקוצרת עם פרמטר בודד מה שמאפשר לוותר על הסוגריים המסמנים פונקציה   </h2>
+
+        <p id="demo5"></p><br />
+    </font>
+
+    <script>
+        var func5;
+
+        func5 = str => " זה אף פעם לא מאוחר מדי להתחיל להיות " + str;
+
+        document.getElementById("demo5").innerHTML = func5("מה שיכולת להיות");
+    </script>
+
+
+</body>
+</html>

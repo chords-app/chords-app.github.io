@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+
+<body bgcolor="greenyellow" dir="rtl">
+    <br /> <br />
+    <center>
+        <h2>  חיפוש באמצעות הפונקציה exec</h2>
+
+        <p id="demo"></p>
+
+        <script>
+            var obj = /ניתנים/.exec("הדברים הטובים בחיים ניתנים חינם");
+            document.getElementById("demo").innerHTML =
+                "  נמצא את המילה: " + obj + "  במיקום: " + obj.index + " בטקסט: " + obj.input;
+        </script>
+    </center>
+</body>
+</html>

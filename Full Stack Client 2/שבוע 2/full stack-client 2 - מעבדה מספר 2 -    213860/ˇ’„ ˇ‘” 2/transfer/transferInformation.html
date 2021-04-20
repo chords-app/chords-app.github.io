@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        var seaPic;
+
+        function NewWithName(what2open) {
+            seaPic = window.open(what2open) 
+        }
+
+        function changeContent() {
+            seaPic.location = "field.html";
+        }
+    </script>
+</head>
+<body>
+    <h1> open new window:</h1>
+    <a href="javascript:" onclick="NewWithName('sea.html')">a new window</a><br />
+    <ul>
+       <li> <a href="javascript:" onclick="changeContent()">change content of a window</a></li>
+       <li> <a href="javascript:" onclick="seaPic.close()">close</a></li>
+     </ul>
+</body>
+</html>

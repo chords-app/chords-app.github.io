@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body bgcolor="greenyellow">
+    <br /> <br /> <br />
+    <center>
+        <button onclick="openWin()">פתח חלון</button> <br /> <br />
+        <button onclick="closeWin()">סגור חלון</button>
+
+    </center>
+
+    <script>
+var newWindow;// משתנה גלובאלי
+
+function openWin() {
+    //פתחנו חלון חדש ונתנו לו שם באמצעותו ניתן להתייחס אליו אחר כך 
+    newWindow = window.open("", "", "width=400,height=250 ");
+    newWindow.document.write("<body dir='rtl' bgcolor='magenta'> <p>זה החלון החדש</p>");
+}
+
+function closeWin() {
+  newWindow.close();
+}
+    </script>
+</body>
+</html>

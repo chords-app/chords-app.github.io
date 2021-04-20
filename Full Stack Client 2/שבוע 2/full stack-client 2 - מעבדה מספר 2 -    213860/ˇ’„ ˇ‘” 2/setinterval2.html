@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <!-- <script>
+        function time() {
+            //creating a date object
+            var today = new Date();
+            
+            var display_val = today.getHours();
+            
+            if (today.getMinutes() < 10) {
+                display_val += ":0" + today.getMinutes()
+            }
+            else {
+                display_val += ":" + today.getMinutes()
+            }
+
+            if (today.getSeconds() < 10) {
+                display_val += ":0" + today.getSeconds();
+            }
+            else {
+                display_val += ":" + today.getSeconds();
+            }
+
+            if (today.getHours() >= 12) {
+                display_val += " P.M.";
+            }
+            else {
+                display_val += " A.M.";
+            }
+
+            document.getElementById("timesPlace").innerHTML = display_val;
+        }
+
+        // to change the time every sec.
+        function start() {
+            setInterval("time()", 1000);
+        }
+
+     //  To start the clock working
+        start();
+    </script>
+ -->
+
+      <!--או שעון בקצרה--> 
+      <script>
+         //שעון
+         var myVar = setInterval(myTimer, 1000);
+
+         function myTimer() {
+             var d = new Date();
+             var t = d.toLocaleTimeString();
+             document.getElementById("timesPlace").innerHTML = t;
+         }
+       </script> 
+
+    <br />
+
+    <p id="timesPlace"></p>
+
+</body>
+</html>

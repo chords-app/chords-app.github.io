@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        side = 2;
+        function cubeVolume(side)
+        {
+            return Math.pow(side, 3);
+        }
+
+        function cubeSum(...input) {
+            var sum = 0; 
+            for (i of input) {
+                sum += i * cubeVolume(side);
+            }
+            return sum;
+        }
+        document.write("<font size=5 >cubeVolume(2)=" + cubeVolume(side) + "<br><br>");
+        document.write("<font size=5 >cubeSum(1)=" + cubeSum(1) + "<br><br>");
+        document.write("<font size=5 >cubeSum(1,2)=" + cubeSum(1, 2) + "<br><br>");
+    </script>
+</body>
+</html>

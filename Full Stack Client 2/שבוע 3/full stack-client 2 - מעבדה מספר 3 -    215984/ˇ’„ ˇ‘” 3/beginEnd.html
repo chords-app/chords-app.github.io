@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body bgcolor="beige" dir="rtl">
+
+    <!-- ^n  -->
+    <center>
+        <font color="coral">
+            <h2>לחץ על הכפתור לחיפוש המילה is  בתחילת המחרוזת</h2>
+
+            <button onclick="Func()">מצא בהתחלה</button>
+
+            <p id="demo"></p>
+        </font>
+    </center>
+
+
+    <script>
+        function Func() {
+            var str = "Is this his gees"; //"Is th\nis his gees";
+            var result = str.match(/^Is/i); //search   //(/^Is/gmi) 
+            document.getElementById("demo").innerHTML = result;
+        }
+    </script>
+
+
+    <!-- n$  -->
+    <center>
+        <font color="green">
+            <h2>לחץ על הכפתור לחיפוש המילה is  בסוף המחרוזת</h2>
+
+            <button onclick="Func2()">מצא בסוף</button>
+
+            <p id="demo2"></p>
+        </font>
+    </center>
+
+
+    <script>
+        function Func2() {
+            var str = "Is this his";
+            var result = str.search(/is$/i); //match  
+            document.getElementById("demo2").innerHTML = result;
+        }
+    </script>
+</body>
+</html>

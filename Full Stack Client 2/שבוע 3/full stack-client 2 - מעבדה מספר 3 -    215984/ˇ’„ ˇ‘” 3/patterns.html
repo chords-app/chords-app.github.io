@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body bgcolor="beige" dir="rtl">
+    <center>
+        <font color="green">
+            <h2> לחץ על הכפתור, לחיפוש גלובלי של אותיות "אהוי" בטקסט</h2>
+
+            <button onclick="myFunction()">חפש אהוי</button>
+
+            <p id="demo"></p>
+        </font>
+    </center>
+    <script>
+        function myFunction() {
+            var str = "אני הולכת לטייל";
+            var result = str.match(/[אהוי]/g);
+            document.getElementById("demo").innerHTML = result;
+        }
+    </script>
+
+
+
+
+    <center>
+        <font color="blue">
+            <h2> לחץ על הכפתור לחיפוש גלובלי של תווים שאינן אותיות "אהוי" בטקסט</h2>
+
+            <button onclick="Func4()">חפש לא אות אהוי</button>
+
+            <p id="demo4"></p>
+        </font>
+    </center>
+    <script>
+        function Func4() {
+            var str = "אני הולכת לטייל";
+            var result = str.match(/[^אהוי]/g);
+            document.getElementById("demo4").innerHTML = result;
+        }
+    </script>
+
+
+
+
+    <center>
+        <font color="magenta">
+            <h2>לחץ על הכפתור לחיפוש גלובלי של ספרות בכל שורות הטקסט  </h2>
+
+            <button onclick="Func2()">חפש ספרות</button>
+
+            <p id="demo2"></p>
+        </font>
+    </center>
+    <script>
+        function Func2() {
+            var str = "\n1 dog\n is running after \n3 cats";
+            var result = str.match(/\d/gm); //   /[0-9]/gm
+            document.getElementById("demo2").innerHTML = result;
+        }
+    </script>
+
+
+
+
+    <center>
+        <font color="orange">
+            <h2>לחץ על הכפתור לחיפוש גלובלי של המחרוזות המוגדרות בהוראה, בכל שורות הטקסט  </h2>
+
+            <button onclick="Func3()">חפש צבעי רמזור</button>
+
+            <p id="demo3"></p>
+        </font>
+    </center>
+    <script>
+        function Func3() {
+            var str = "\n When the Green man shows up at the traffic light - we'll pass\n when the Red man shows up - we'll stop \nwhen the Orange man shows up - we'll slow down";
+            var result = str.match(/(red|orange|green)/gmi);
+            document.getElementById("demo3").innerHTML = result;
+        }
+    </script>
+
+</body>
+</html>

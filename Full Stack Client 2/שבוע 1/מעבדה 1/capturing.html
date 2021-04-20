@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <style>
+        .divstyle {
+          /*  display: table-cell;*/
+            border: 2px solid black;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div id="div1" class="divstyle">
+            div1
+            <div id="div2" class="divstyle">
+                div2
+                <div id="div3" class="divstyle">
+                    div3
+                </div>
+            </div>
+        </div>
+    </center>
+ <script>
+   var divs = document.getElementsByTagName("div");
+     for (var i = 0; i < divs.length; i++){
+       //capture -הופך את מצב הפעלת הארועים המקוננים ל true 
+      divs[i].addEventListener("click",clickhandler,true );
+   }
+     function clickhandler() {
+       // getAttribute -  קח" את המאפיין
+      alert(this.getAttribute("id") + " event got handled");
+   }
+  </script>
+</body>
+</html>

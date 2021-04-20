@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body bgcolor="beige" dir="rtl">
+    <!-- metacharacter  . -->
+    <center>
+        <font color="olive">
+            <h2>לחץ על הכפתור לביצוע חיפוש גלובלי של b.g</h2>
+
+            <button onclick="Func()">לחץ</button>
+
+            <p id="demo"></p>
+        </font>
+    </center>
+    <script>
+        function Func() {
+            var str = "This Big bag is in the bath";
+            var result = str.match(/b.g/gi);
+            document.getElementById("demo").innerHTML = result;
+        }
+    </script>
+
+
+
+
+    <!-- metacharacter  \w -->
+    <center>
+        <font color="red">
+            <h2>חיפוש גלובלי של אותיות ספרות ומקף תחתון </h2>
+
+            <button onclick="Func2()">מצא אותיות ספרות ומקף תחתון</button>
+
+            <p id="demo2"></p>
+        </font>
+    </center>
+
+    <script>
+        function Func2() {
+            var str = "100% water is H2o !!!"; //100_%
+            var result = str.match(/\w/g);
+            //rtl - הפלט הפוך בגלל ה
+            document.getElementById("demo2").innerHTML = result;
+        }
+    </script>
+
+
+
+
+    <!-- metacharacter  \W -->
+    <center>
+        <font color="blue">
+            <h2>חיפוש גלובלי של תווים שאינם אותיות ספרות ומקף תחתון </h2>
+
+            <button onclick="Func3()"> תווים שאינם אותיות ספרות ומקף תחתון</button>
+
+            <p id="demo3"></p>
+        </font>
+    </center>
+
+    <script>
+        function Func3() {
+            var str = "100% water is H2o !!!";
+            var result = str.match(/\W/g);
+            document.getElementById("demo3").innerHTML = result;
+        }
+    </script>
+
+
+
+
+    <!-- metacharacter  \b -->
+    <center>
+        <font color="magenta">
+            <h2>
+                חיפוש אחר מיקום הצירוף LO בתחילת מילה במשפט:
+                <br>
+                "! HELLO, LOOK  AT  YOU"
+            </h2>
+
+            <p>נמצא במיקום : <span id="demo4"></span></p>
+        </font>
+    </center>
+
+    <script>
+        var str = "HELLO, LOOK AT YOU!";
+        var patt1 = /\bLO/; //  /LO\b/
+        var result = str.search(patt1);
+        document.getElementById("demo4").innerHTML = result;
+    </script>
+
+
+
+
+    <!-- metacharacter  \n -->
+    <center>
+        <font color="aquamarine">
+            <h2> לחץ על הכפתור למציאת מיקום התו המורה על שורה חדשה </h2>
+
+            <button onclick="Func5()">היכן השורה החדשה</button>
+
+            <p id="demo5"></p>
+        </font>
+    </center>
+
+    <script>
+        function Func5() {
+            var str = "Walk in the mountains \nand see the view";
+            var result = str.search(/\n/);
+            document.getElementById("demo5").innerHTML = result;
+        }
+    </script>
+
+</body>
+</html>

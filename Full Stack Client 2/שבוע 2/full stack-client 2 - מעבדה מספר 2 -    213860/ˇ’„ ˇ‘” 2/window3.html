@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script>
+var myWindow;
+
+function openWin() {
+  myWindow = window.open("", "", "width=600, height=300");
+}
+
+function closeWin() {
+    myWindow.close();
+}
+
+function checkWin() {
+    if (myWindow.closed) {
+      document.getElementById("msg").innerHTML = " ! החלון סגור ";
+    } else {
+      document.getElementById("msg").innerHTML = "! החלון פתוח  ";
+    }
+}
+
+function changeWin() {
+    myWindow.location = "https://magazine.shufersal.co.il/%D7%94%D7%9E%D7%92%D7%96%D7%99%D7%9F-%D7%A7%D7%95%D7%9C%D7%99%D7%A0%D7%A8%D7%99/%D7%9E%D7%AA%D7%9B%D7%95%D7%A0%D7%99%D7%9D-%D7%9C%D7%A1%D7%95%D7%A3-%D7%94%D7%A9%D7%91%D7%95%D7%A2/?utm_source=google&utm_medium=serch&utm_campaign=foodilicious_mar_20&utm_term=ocean&utm_content=weekend_recipes&gclid=EAIaIQobChMIzezDxaG56AIV0cjeCh3s2wd_EAAYASAAEgJvDvD_BwE"; //"https://he.wikipedia.org/wiki/%D7%99%D7%90%D7%A0%D7%95%D7%A9_%D7%A7%D7%95%D7%A8%D7%A6%27%D7%90%D7%A7"; //
+        }        
+    </script>
+</head>
+<body>
+    <br><br><br>
+            <center>
+                <button onclick="openWin()">פתח חלון</button>
+                <br><br>
+                <button onclick="closeWin()">סגור חלון</button>
+                <br><br>
+                <button onclick="checkWin()">?האם החלון סגור </button>
+                <br><br>
+                <button onclick="changeWin()">שנה את כתובת החלון </button>
+                <p id="msg"></p>
+            </center>
+
+</body>
+</html>

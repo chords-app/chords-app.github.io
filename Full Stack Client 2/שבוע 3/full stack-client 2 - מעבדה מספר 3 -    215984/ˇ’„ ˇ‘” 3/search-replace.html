@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body bgcolor="beige" dir="rtl">
+    <center>
+        <h2>חפש תת מחרוזת והצג את מיקומה במחרוזת בה מתבצע החיפוש</h2>
+        <p id="demo"></p> <br />
+
+        <script>
+            var str = "Hello ALL, Lets Find You";
+            var n = str.search("You"); //you   /YOU/
+            document.getElementById("demo").innerHTML = "מיקום המילה  'You' במחרוזת הוא: " + n;
+        </script>
+
+
+
+
+        <h2>  בלחיצה על הכפתור "החלף" בצע החלפה של מילה במשפט</h2>
+
+        <button onclick="Func()">החלף</button> <br />
+        <p id="demo2"></p>
+
+        <script>
+            function Func() {
+                var txt = str.replace("You", "Me"); //you me
+                document.getElementById("demo2").innerHTML = txt;
+            }
+        </script>
+    </center>
+</body>
+</html>

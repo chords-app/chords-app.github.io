@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body bgcolor="lightpink" dir="rtl">
+    <br /> <br />
+    <center>
+        <font color="blue">
+            <h2>לחץ על הכפתור לביצוע חיפוש גלובלי בכל השורות של הטקסט כאשר אין משמעות לאותיות גדולות /קטנות </h2>
+
+            <button onclick="Func()">לחץ</button>
+
+            <p id="demo"></p>
+        </font>
+    </center>
+    <script>
+       function Func() {
+           var str = "\nIs th\nis h\nis \nbee ?";
+           // מחפש את התו/המחרוזת  - ^
+           // בתחילת המחרוזת/השורה בה מתבצע החיפוש
+          var result = str.match(/^is/gmi); //mi  //i
+          document.getElementById("demo").innerHTML = result;
+       }
+    </script>
+
+</body>
+</html>

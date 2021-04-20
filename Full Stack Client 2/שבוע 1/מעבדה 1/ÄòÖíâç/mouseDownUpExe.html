@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<script>
+
+    function mouseDown() 
+    {
+        document.getElementById("p1").style.color = "magenta";
+    }
+
+    function mouseUp()
+    {
+        document.getElementById("p1").style.color = "white";
+    }
+
+    function mouseOut()
+    {
+        document.getElementById("p1").style.color = "black";
+    }
+
+</script>
+</head>
+
+<body>
+     
+<p id="p1" onmousedown="mouseDown()" onmouseup="mouseUp()" onmouseout="mouseOut()">
+
+
+
+
+
+
+
+
+          Click the text! The mouseDown() function is triggered when the mouse button is pressed down
+          over this paragraph. The function sets the color of the text to magenta. 
+          The mouseUp() function is triggered when the mouse button is released. 
+          The mouseUp() function sets the color of the text to green.                 
+</p>
+
+</body>
+
+</html>

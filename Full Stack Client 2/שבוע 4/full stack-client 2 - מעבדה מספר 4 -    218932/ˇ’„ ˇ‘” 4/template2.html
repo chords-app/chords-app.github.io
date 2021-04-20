@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        //example1
+       //// שילוב שתי מחרוזות
+        str1 = `The sun is shining `;
+        str2 = `${str1} & the birds are chirping`;
+        document.write(`<h2> ${str2} </h2><br>`); 
+
+       // //מקביל לשירשור מחרוזות
+        str1 = "The sun is shining ";
+        str2 = str1+ "& the birds are chirping";
+        document.write("<h2>" + str2 + "</h2>");
+
+
+
+        //example2
+        //שילוב ביטוי חשבוני עם מחרוזת
+        //str = `calculate 1 + 2 + 3 =  ${1+2+3}`;
+        //document.write(`<h2> ${str} </h2><br>`); 
+
+       // or // document.write("<h2>calculate 1 + 2 + 3 = " +(1+2+3)+" </h2><br>"); 
+
+        ////מקביל לשירשור מחרוזות
+        //str = "calculate 1 + 2 + 3 = "+ (1 + 2 + 3);
+        //document.write("<h2>" + str + "</h2><br>"); 
+
+
+
+
+         //example3
+        // שילוב זימון פונקציה עם מחרוזת
+        //function connecting(str1,str2)
+        //{
+        //    return str1+str2;
+        //}
+
+        //str3 = `have a nice day`;
+        //str4 = ` ${connecting("lea ", "hanuka, ")} ${str3}`;
+        ////str4 = ` ${connecting(50,40)} ${str3}`;
+        //document.write(`<h2> ${str4} </h2><br>`); 
+    </script>
+</body>
+</html>

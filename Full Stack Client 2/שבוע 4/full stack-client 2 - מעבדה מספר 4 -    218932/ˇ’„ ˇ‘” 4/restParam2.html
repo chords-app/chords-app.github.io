@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        function fun(a, b, ...c) {
+            alert(`${a} ${b}`);  
+            alert(c); 
+            alert(c[0]); 
+            alert(c.length); 
+            alert(c.indexOf('זית'));
+            alert(c.indexOf('באובב'));
+            alert(c.indexOf(7));
+        }
+        
+        fun('זית', 'אורן', 'אלון', 'איזדרכת', 'באובב',5); 
+
+    </script>
+</body>
+</html>

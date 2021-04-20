@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        // rest parameter - ללא שימוש ב 
+        function mul(num1, num2) {
+            return num1 * num2;
+        }
+            document.write("<font size=7> mul(10,20)="+ mul(10, 20)+ "<br><br>");
+    </script>
+
+
+    <script>
+        function mul2(...input) {
+            var sum = 1;
+            for (i of input) {
+                sum *= i;
+            }
+            return sum;
+        }
+        document.write("<font size=7> mul2(1, 2)=" + mul2(1, 2) + "<br><br>");  
+        document.write("<font size=7> mul2(1, 2, 3)=" + mul2(1, 2, 3) + "<br><br>");  
+        document.write("<font size=7> mul2(1, 2, 3, 4, 5)=" + mul2(1, 2, 3, 4, 5) + "<br><br>");
+        document.write("<font size=7> mul2()=" + mul2() + "<br><br>"); 
+    </script>
+    
+</body>
+</html>

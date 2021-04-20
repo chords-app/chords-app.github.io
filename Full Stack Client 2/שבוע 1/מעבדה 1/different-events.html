@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+
+    <center>
+        <h2>הוספת ארועים שונים לאותה תגית </h2>
+
+        <input type="button" id="btn" value="לחץ">
+
+        <p id="showhere"></p>
+
+        <br /><br />
+
+        <p id="example2"></p>
+    </center>
+
+    <script>
+        var x = document.getElementById("btn");
+        x.addEventListener("mouseover", myFunction);
+        x.addEventListener("click", mySecondFunction);
+        x.addEventListener("mouseout", myThirdFunction);
+
+        function myFunction() {
+          //  document.getElementById("showhere").innerHTML += "מעבר עכבר מעל הכפתור <br>";
+          showhere.innerHTML += "מעבר עכבר מעל הכפתור <br>";
+        }
+
+        function mySecondFunction() {
+            document.getElementById("showhere").innerHTML += "לחיצה<br>";
+        }
+
+        function myThirdFunction() {
+            document.getElementById("showhere").innerHTML += "עכבר יצא מחוץ לתחום הכפתור<br>";
+        }
+
+        window.addEventListener("resize", function () {
+            document.getElementById("example2").innerHTML = "hello all!";
+        });
+       
+    </script>
+
+</body>
+</html>

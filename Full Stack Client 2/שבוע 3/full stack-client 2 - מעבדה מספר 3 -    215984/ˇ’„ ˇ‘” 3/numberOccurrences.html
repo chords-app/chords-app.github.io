@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body bgcolor="beige" dir="rtl">
+    <center>
+        <font color="coral">
+            <h2>  לחץ על הכפתור לחיפוש גלובלי אחד לפחות של התו המבוקש,
+            מבלי להתחשב באותיות קטנות או גדולות  </h2>
+
+            <button onclick="Func()"> חפש </button>
+
+            <p id="demo"></p>
+        </font>
+    </center>
+
+    <script>
+        function Func() {
+            var str = "Look at the owl LOOKING at you";
+            var result = str.match(/o+/gi);
+            document.getElementById("demo").innerHTML = result;
+        }
+    </script>
+
+
+
+
+    <center>
+        <font color="darkgreen">
+            <h2> לחץ על הכפתור לחיפוש גלובלי של האות "אל" שאחריה אפס או יותר אותיות "או" מבלי להתחשב באותיות קטנות או גדולות </h2>
+            <button onclick="Func2()">חפש צרוף</button>
+
+            <p id="demo2"></p>
+        </font>
+    </center>
+
+    <script>
+        function Func2() {
+            var str = "Look at the owl LOOKING at you";
+            var result = str.match(/lo*/gi);
+            document.getElementById("demo2").innerHTML = result;
+        }
+    </script>
+
+
+
+
+    <center>
+        <font color="blue">
+            <h2> לחץ על הכפתור לחיפוש גלובלי של האות "אל" שאחריה אפס או אחד הופעות של האות "או" מבלי להתחשב באותיות קטנות או גדולות </h2>
+            <button onclick="Func3()">חפש צרוף</button>
+
+            <p id="demo3"></p>
+        </font>
+    </center>
+
+    <script>
+        function Func3() {
+            var str = "Look at the owl LOOKING at you";
+            var result = str.match(/lo?/gi);
+            document.getElementById("demo3").innerHTML = result;
+        }
+    </script>
+</body>
+</html>
