@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+    //This class defines rational numbers 
+    class Rational {
+        //constructor
+        constructor() {
+            
+        }
+        //getters
+        get getX() {
+            return this.x;
+        }
+
+        get getY() {
+            return this.y;
+        }
+
+        //setters
+        set SetX(x) {
+                this.x = x
+        }
+
+        set SetY(y) {
+            if (y != 0)
+                this.y = y
+        }
+
+        //istance methods
+        //The method checks if the rational numbers are equal
+        IsEqual(num) {
+            if (this.x * num.y == this.y * num.x)
+                return true
+            else return false;
+        }
+
+        //The method multiplies the rational numbers
+       // and returns the multiplication result
+        Multiply(num) {
+            var r = new Rational();
+            r.SetX = this.x * num.x;
+            r.SetY = this.y * num.y;
+            return r;
+        }
+
+        //The method performs a division action on the rational numbers
+        //and returns the  result of division
+        Divide(num) {
+            if (num.x != 0) {
+                var r = new Rational();
+                r.SetX = this.x * num.y;
+                r.SetY = this.y * num.x;
+                return r;
+            }
+            else {
+                num.x = null;
+                document.write("There is an invalid number for the divide operation")
+            }
+        }
+        //The method returns a string describing a rational number
+        toString() {
+            return this.x + "/" + this.y;
+        }
+    }
+
+        r1 = new Rational();
+        r1.SetX = 1;
+        r1.SetY = 2;
+
+      //  r2 = new Rational();
+        r2 = new Rational();
+        r2.SetX = 3; //2
+        r2.SetY = 4;
+
+        document.write("<font size='5'> r1=" + r1.toString()+"<br>");
+        document.write("r2=" + r2.toString() + "<br>");
+
+
+        if (r1.IsEqual(r2)) // if (r1.IsEqual(r2)==true) 
+            document.write("r1 & r2 are equal <br>")
+        else
+            document.write("r1 & r2 are not equal <br>");
+
+
+            var newr1 = new Rational();
+        newr1 = r1.Multiply(r2);
+        document.write("r1*r2=" + newr1.toString()+"<br>");
+
+        var newr2 = new Rational();
+        newr2 = r1.Divide(r2);
+        document.write("r1/r2=" + newr2.toString());
+    </script>
+</body>
+</html>

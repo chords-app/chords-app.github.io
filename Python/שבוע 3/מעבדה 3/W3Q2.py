@@ -1,4 +1,4 @@
-x = str(input('Enter the number of Letters that you want to get'))
+x = input('Enter the number of Letters that you want to get')
 y = ord(x)
 b = 0
 while y!=123:

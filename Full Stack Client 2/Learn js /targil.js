@@ -1,4 +1,6 @@
-let multiply = function (arg1 = 0) { const answer = arg1 * 2;
-    return answer;
-    }
-    let foo = multiply(1); console.log(foo)
+function myFunc (){
+    let a = null;
+    return a;
+}
+let b = myFunc ();
+console.log (b);    

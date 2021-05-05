@@ -1,15 +1,14 @@
-
-while (a<=10 or a>=99 and (a)):
-   a = int(input(' Enter a two digit number'))
-   b = a//10
-   c = a%10
-   if (b%2==0 and c%2!=0):
-       break
-       #print('zugi no zugi' )
-   elif (b%2!=0 and c%2==0):
-       break
-       #print('izugi zugi')    
-   else:
-      print ('zugi zugi or izugi izugi')
-
-      cou += 1
+num = int(input("Enter a number :"))
+r=num%10
+l=num//10
+max=r+l
+flag=True
+if(r%2==0 and l%2==0)or(r%2==1 and l%2==1):
+    while(flag):
+        num = int(input("Enter a number :"))
+        r=num%10
+        l=num//10
+        if(r+l>max):
+            max=r+l
+        if!(r%2==0 and l%2==0)or(r%2==1 and l%2==1): 
+           flag=False

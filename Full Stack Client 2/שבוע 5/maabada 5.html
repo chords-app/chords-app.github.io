@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <script>
+    
+    function arr (...streets)
+    {
+        str = [...streets]
+        return str.toString();
+    }
+
+
+    document.write(arr("Shushanim", "Vradim", "Haruzim"))
+    
+    str2 = arr("Shushanim", "Vradim", "Haruzim")
+    
+    where = prompt('Enter street')
+
+
+    if (str2.search(where) >= 0) 
+    {
+        document.write("<br> Street " + where+ " is in the array")
+        document.write("<br>"+str2.replace(where, "Margalit"))
+    }
+    else 
+        document.write("<br>")
+
+    
+    </script>
+
+    
+<body>
+    
+</body>
+
+  
+</html>

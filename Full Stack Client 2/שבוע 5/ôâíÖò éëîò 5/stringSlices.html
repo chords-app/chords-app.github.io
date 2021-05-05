@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body dir="rtl" style="background-color:aquamarine ">
+    <h1>חילוץ חלקים ממחרוזת תוך שימוש במתודה  slice</h1>
+    <script>
+        //example1
+        var str = "שרה שרה שיר שמח, שיר שמח שרה שרה"
+        var subStr = str.slice(-7,-4)
+        document.write("<font size=5>");
+        document.write("  המילה אליה נגיע מסוף המשפט ממיקום  7 עד 5 מהסוף: " + subStr +"<br><br>")
+
+        var subStr2 = str.slice(4,7)
+        document.write("<font size=5>");
+        document.write("  המילה אליה נגיע מתחילת המשפט ממיקום  4 עד 6 החל מ - 0: " + subStr2 + "<br><br>")
+
+
+        //example2
+        var str = "גנן גידל דגן בגן, דגן גדול גדל בגן"
+        var subStr3 = str.slice(-16)
+        document.write("<font size=5>");
+        document.write("  החלק שנותר מסוף המשפט ממיקום  16 עד סוף המשפט: " + subStr3 + "<br><br>")
+
+        var str = "גנן גידל דגן בגן, דגן גדול גדל בגן"
+        var subStr4 = str.slice(18)
+        document.write("<font size=5>");
+        document.write("  החלק שנותר מתחילת המשפט ממיקום  18 עד סוף המשפט: " + subStr4 + "<br><br>")
+
+
+    </script>
+</body>
+</html>

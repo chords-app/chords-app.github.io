@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body dir="rtl">
+    <center>
+        <h1>סרטים</h1>
+
+        <h2> באמצעות מחלקה המגדירה סרט ניצור עצמים שמייצגים סרטים ונבצע עליהם פעולות / מתודות   </h2><br />
+
+        <p id="demo"></p><br /><br />
+        <p id="demo2"></p><br /><br />
+    </center>
+<script>
+class Movie {
+  constructor(name,category) {
+      this.name = name;
+      this.category = category;
+    }
+
+    //instance methods
+
+    //getters
+    get getName() {
+        return this.name;
+    }
+
+    get getCategory() {
+        return this.category;
+    }
+
+    //setters
+    set setName(n) {
+        this.name = n;
+    }
+
+    set setCategory(c) {
+        this.category = c;
+    }
+
+    //instance method
+    toString() {
+        return "<font size='5'>שם הסרט: " + this.name + "  קטגוריה: " + this.category;
+    }
+
+}
+   //  זימון הבנאי - ליצירת עצם מסוג סרט 
+    movie1 = new Movie("פורד נגד פרארי", "דרמה");
+    //  זימון מתודה בונה ריקה
+    //movie1 = new Movie();
+    //  זימון הבנאי - ליצירת עצם נוסף מסוג סרט
+    movie2 = new Movie("באטמן", "גיבורי על");
+
+// setter זימון
+    movie1.setCategory = "היסטוריה";
+
+//getter  זימון
+    document.getElementById("demo").innerHTML = "<font size='5'> שם הסרט: " + movie1.getName + " קטגוריה של הסרט: " + movie1.getCategory;
+
+//זימון מתודת מופע
+    document.getElementById("demo2").innerHTML = movie2.toString();//  movie1;
+
+</script>
+</body>
+</html>

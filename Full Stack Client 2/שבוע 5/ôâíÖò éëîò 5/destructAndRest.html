@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body style="background-color:magenta">
+<script>
+    var planets = ["Mercury", "Earth", "Venus", "Mars", "Pluto", "Saturn"];
+    var [ ,second,third , ...others] = planets;
+    document.write(`<h1>Rest parameter & Ignoring a value from the array  </h1>`);
+    document.write("<font size='5'>" + second + "<br>");
+    document.write(third + "<br>");
+    document.write(others + "<br>");
+</script>
+</body>
+</html>

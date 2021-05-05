@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body dir="rtl" style="background-color:antiquewhite">
+    <center>
+        <script>
+            //example1
+           // var names = ["אוריאל", "ירון", "דני", "תמיר"];
+           // document.write(`<font size=5>`);
+           // document.write("מערך מקורי" + "<br>");
+           // document.write(names + "<br><br>");
+           // //הפרמטר המספרי הראשון מציין את המיקום החל ממנו יתווספו אלמנטים למערך
+           ////הפרמטר המספרי השני מציין כמה אלמנטים יוסרו/ימחקו מהמערך
+           // //יתר הפרמטרים אלו האלמנטים שיתווספו למערך 
+           // names.splice(2, 0, "יונתן", "עמיר");
+           // document.write("מערך חדש" + "<br>");
+           // document.write(names + "<br><br><br><br>");
+
+
+
+            //example2
+            var names = ["אוריאל", "ירון", "דני", "תמיר"];
+            document.write(`<font size=5>`);
+            document.write("מערך מקורי" + "<br>");
+            document.write(names + "<br><br>");
+            //הפרמטר המספרי הראשון מציין את המיקום החל ממנו יתווספו אלמנטים למערך
+            //הפרמטר המספרי השני מציין כמה אלמנטים יוסרו/ימחקו מהמערך
+            //יתר הפרמטרים אלו האלמנטים שיתווספו למערך
+            //המתודה מחזירה מערך המכיל את האלמנטים שהוסרו ממנו 
+            var rem = names.splice(1,2, "יונתן", "ירמי");
+            document.write("האלמנטים שהוסרו" + "<br>");
+            document.write(rem + "<br><br>");
+            document.write("מערך חדש" + "<br>");
+            document.write(names + "<br><br><br><br>");
+        </script>
+    </center>
+</body>
+</html>

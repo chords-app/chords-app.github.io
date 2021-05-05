@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body style="background-color:silver">
+<script>
+    function runners()
+    {
+        return ["shoshy", "simmy", "eviatar"];
+    }
+    //השמה מפורקת של מערך מוחזר   
+    var [a, b, c] = runners();
+    document.write(`<h1>Destructuring Returned Array, All the values from the array returned by the function </h1>`);
+    document.write("<font size='5'>" + a + "<br>");
+    document.write(b + "<br>");
+    document.write(c + "<br>");
+
+    document.write("<br><br>");
+    document.write(`<h2>Regular Returned Array by function </h2>`); 
+    var narr = runners();
+    document.write(narr)
+</script>
+</body>
+</html>

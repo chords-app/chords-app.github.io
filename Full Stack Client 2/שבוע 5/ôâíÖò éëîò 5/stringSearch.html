@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body dir="rtl" style="background-color:aquamarine">
+    <h1>חיפוש על יד המתודות:  indexOf ו- search</h1>
+    <script>
+        
+        var str = "שרה שרה שיר שמח, שיר שמח שרה שרה"
+        //החיפוש מתחיל מתחילת המחרוזת
+        var pos = str.indexOf("שרה");
+        document.write("<font size=5>");
+        document.write(" משפט בו יתבצעו החיפושים: "+str +"<br><br>")
+        document.write("מיקום ראשון של המילה 'שרה' במשפט: " + pos + "<br><br>");
+
+        //הפרמטר השני מציין החל מאיפה להתחיל את החיפוש
+        pos2 = str.indexOf("שרה",2);
+        document.write("מיקום שני של המילה 'שרה' במשפט: " + pos2 + "<br><br>");
+        var pos3 = str.search("שיר");
+        document.write("מיקום ראשון של המילה 'שיר' במשפט: " + pos3 + "<br><br>");
+        var pos4 = str.search(/שיר/);
+        document.write("מיקום ראשון של המילה 'שיר' במשפט והפעם נחפש על ידי ביטוי רגולרי  " + pos4);
+
+    </script>
+</body>
+</html>

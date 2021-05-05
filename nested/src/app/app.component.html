@@ -1,0 +1,51 @@
+<div class="column">
+
+<h1>Software College</h1> 
+ <div>
+    <button type="button" class="btn btn-primary" (click)="showHome()">Home</button>
+    <button type="button" class="btn btn-primary" (click)="showStudents()">Students</button> 
+    <button type="button" class="btn btn-primary" (click)="showCourses()">Courses</button>
+</div>
+<ng-container *ngIf="homeFlag">
+    <div class="jumbotron">
+    <h1 class="display-3">Welcome</h1>
+    <p class="lead">Ort Braude Software Department!</p>
+    </div>
+   </ng-container>
+
+   <ng-container *ngIf="studentsFlag">
+    <div class="jumbotron">
+    <h1 class="display-3">Our Students</h1>
+    <p class="lead">Here you can find name of our students that study now</p>
+    </div>
+    <div class="column">
+        <img style="grid-auto-flow: row;" class="img" src= "https://d28htnjz2elwuj.cloudfront.net/wp-content/uploads/2019/02/04142709/college-students-600x400-600x400.jpg" alt="Thumbnail image"> </div>
+        ￼<div class="row">
+             <app-courses-list></app-courses-list>
+          </div>
+          
+          <div class="column" *ngIf="coursesList?.showStudentComponent">
+            <app-students-table [selectedCourse]="coursesList?.selectedCourse">
+        
+            </app-students-table> 
+            </div>
+    
+   </ng-container>
+
+   <ng-container *ngIf="coursesFlag">
+    <div class="jumbotron">
+    <h1 class="display-3">Our Courses</h1>
+    <p class="lead">Here you can find name of our Courses</p>
+     <div>
+        <app-card></app-card>
+    </div>
+    </div>
+   </ng-container>
+      
+              
+ >
+    <div>
+        <app-footer></app-footer>
+    </div>
+   
+    
